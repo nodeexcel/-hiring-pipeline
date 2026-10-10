@@ -58,8 +58,8 @@ describe.skipIf(!reachable || !isLocal)("mobile client against the local stack",
     expect(progress(s)).toMatchObject({ total: paper.questions.length, answered: paper.questions.length, unanswered: 0 });
 
     // 4. submit with the monotonic elapsed time and the HMAC the server verifies
-    const clock = startClock(0, 0);
-    const elapsed = elapsedMs(clock, 90_000);
+    const clock = startClock(0, 0, 0);
+    const elapsed = elapsedMs(clock, 90_000, 90_000);
     s = reduce(s, { type: "SUBMIT_STARTED" });
     const out = await api.submit({
       code,

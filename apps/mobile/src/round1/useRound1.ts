@@ -1,9 +1,10 @@
 import NetInfo from "@react-native-community/netinfo";
+import { activateKeepAwakeAsync, deactivateKeepAwake } from "expo-keep-awake";
 import { useCallback, useEffect, useReducer, useRef, useState } from "react";
 import { BackHandler } from "react-native";
 import { signAnswers } from "@app/shared";
 import { api, ApiError } from "./api";
-import { elapsedMs as clockElapsed, isExpired, startClock, type Clock } from "./clock";
+import { elapsedMs as clockElapsed, isExpired, resumedBaseMs, startClock, type Clock } from "./clock";
 import { copy, userMessage } from "./copy";
 import { makeEvent } from "./events";
 import { kiosk } from "./kiosk";
@@ -30,8 +31,8 @@ export function useRound1() {
   const frozenElapsed = useRef<number | null>(null);
   const uploading = useRef(false);
 
-  const now = () => performance.now();
-  const used = () => frozenElapsed.current ?? (clockRef.current ? clockElapsed(clockRef.current, now()) : 0);
+  const used = () =>
+    frozenElapsed.current ?? (clockRef.current ? clockElapsed(clockRef.current, performance.now(), Date.now()) : 0);
   const limitMs = (state.paper?.durationMinutes ?? 0) * 60_000;
   const remainingMs = Math.max(0, limitMs - used());
   void tick; // re-renders the countdown every half second
@@ -55,6 +56,7 @@ export function useRound1() {
       flagged: s.flagged,
       index: s.index,
       elapsedMs: Math.round(used()),
+      savedAtWall: Date.now(),
       started: clockRef.current !== null,
       finished: s.finished,
       events: s.events,
@@ -64,6 +66,15 @@ export function useRound1() {
   useEffect(() => {
     if (state.paper && (state.phase === "test" || state.phase === "review" || state.phase === "submitting")) void persist();
   }, [state.answers, state.flagged, state.index, state.events, state.finished, state.phase, state.paper, persist]);
+
+  // ---- a sleeping screen would background the app and be flagged, so keep it on during the test
+  useEffect(() => {
+    const live = state.phase === "test" || state.phase === "review";
+    if (live) void activateKeepAwakeAsync("round1").catch(() => undefined);
+    return () => {
+      if (live) void deactivateKeepAwake("round1").catch(() => undefined);
+    };
+  }, [state.phase]);
 
   // ---- connectivity (for the ready screen and the upload step)
   useEffect(() => NetInfo.addEventListener((s) => setOnline(s.isConnected === true)), []);
@@ -93,9 +104,11 @@ export function useRound1() {
           frozenElapsed.current = saved.session.elapsedMs;
           dispatch({ type: "RESTORED", state: { ...base, phase: "submitting" } });
         } else if (saved.session.started) {
-          clockRef.current = startClock(saved.session.elapsedMs, now());
+          // the time the app spent closed counts: closing it does not stop the timer
+          const usedMs = resumedBaseMs(saved.session.elapsedMs, saved.session.savedAtWall ?? Date.now(), Date.now());
+          clockRef.current = startClock(usedMs, performance.now(), Date.now());
           kiosk.start();
-          // time while the app was closed is not counted, so make the restart visible
+          // and make the restart visible to the reviewer
           dispatch({ type: "RESTORED", state: { ...base, phase: "test", events: [...base.events, makeEvent("app_restart")] } });
         } else {
           dispatch({ type: "RESTORED", state: { ...base, phase: "ready" } });
@@ -156,13 +169,25 @@ export function useRound1() {
     if (state.phase === "submitting" && state.finished && !state.error) void upload();
   }, [state.phase, state.finished, state.error, upload]);
 
+  // ---- internet came back while an upload was waiting: try again without a tap
+  const wasOnline = useRef<boolean | null>(null);
+  useEffect(() => {
+    const cameBack = online === true && wasOnline.current !== true;
+    wasOnline.current = online;
+    const s = stateRef.current;
+    if (cameBack && s.phase === "submitting" && s.finished && s.error) {
+      dispatch({ type: "ERROR_CLEARED" });
+      void upload();
+    }
+  }, [online, upload]);
+
   // ---- the countdown, and auto-submit at zero
   useEffect(() => {
     if (state.phase !== "test" && state.phase !== "review") return;
     const id = setInterval(() => {
       setTick((t) => t + 1);
       const s = stateRef.current;
-      if (clockRef.current && s.paper && isExpired(s.paper.durationMinutes * 60_000, clockRef.current, now())) submit();
+      if (clockRef.current && s.paper && isExpired(s.paper.durationMinutes * 60_000, clockRef.current, performance.now(), Date.now())) submit();
     }, 500);
     return () => clearInterval(id);
   }, [state.phase, submit]);
@@ -212,6 +237,7 @@ export function useRound1() {
           flagged: [],
           index: 0,
           elapsedMs: 0,
+          savedAtWall: Date.now(),
           started: false,
           finished: false,
           events: [],
@@ -231,7 +257,7 @@ export function useRound1() {
       dispatch({ type: "ERROR", message: copy.offlineNeeded });
       return;
     }
-    clockRef.current = startClock(0, now());
+    clockRef.current = startClock(0, performance.now(), Date.now());
     kiosk.start();
     dispatch({ type: "STARTED" });
   }, []);

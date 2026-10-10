@@ -17,6 +17,7 @@ import { RulesScreen } from "./screens/RulesScreen";
 import { SubmittingScreen } from "./screens/SubmittingScreen";
 import { TestScreen } from "./screens/TestScreen";
 import { ThemeProvider } from "./theme";
+import { ErrorBoundary } from "./ui/ErrorBoundary";
 
 function Round1() {
   const r = useRound1();
@@ -78,6 +79,8 @@ export default function App() {
   const [loaded] = useFonts({ Manrope_400Regular, Manrope_500Medium, Manrope_600SemiBold, Montserrat_500Medium, Montserrat_600SemiBold, Onest_500Medium });
   // never hold a candidate on a blank screen: fall back to system fonts after a moment
   const [giveUp, setGiveUp] = useState(false);
+  // bumping the key remounts the app, which restores the saved session from storage
+  const [session, setSession] = useState(0);
   useEffect(() => {
     const id = setTimeout(() => setGiveUp(true), 3000);
     return () => clearTimeout(id);
@@ -86,7 +89,9 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <Round1 />
+      <ErrorBoundary onReload={() => setSession((n) => n + 1)}>
+        <Round1 key={session} />
+      </ErrorBoundary>
     </ThemeProvider>
   );
 }

@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { elapsedMs, formatClock, isExpired, remainingMs, startClock } from "./clock";
+import { elapsedMs, formatClock, isExpired, remainingMs, resumedBaseMs, startClock } from "./clock";
 import { makeEvent, pushEvent } from "./events";
 import { initialState, progress, reduce, type State } from "./state";
 import type { Paper } from "./types";
@@ -16,28 +16,59 @@ const at = (s: State, ...actions: Parameters<typeof reduce>[1][]) => actions.red
 const ready = (): State => at({ ...initialState, phase: "code" }, { type: "PAPER_READY", paper });
 
 describe("clock", () => {
-  it("counts only monotonic time, so changing the wall clock cannot add time", () => {
-    const c = startClock(0, 1000);
-    expect(elapsedMs(c, 1000 + 5 * 60_000)).toBe(5 * 60_000);
-    // a reading that goes backwards (it should not, but never credit negative time)
-    expect(elapsedMs(c, 500)).toBe(0);
+  const MIN = 60_000;
+
+  it("counts monotonic time when both clocks move together", () => {
+    const c = startClock(0, 1000, 5_000_000);
+    expect(elapsedMs(c, 1000 + 5 * MIN, 5_000_000 + 5 * MIN)).toBe(5 * MIN);
   });
-  it("resumes from the time already used after a restart", () => {
-    const resumed = startClock(10 * 60_000, 42);
-    expect(remainingMs(30 * 60_000, resumed, 42)).toBe(20 * 60_000);
-    expect(remainingMs(30 * 60_000, resumed, 42 + 5 * 60_000)).toBe(15 * 60_000);
+
+  it("does not let a clock moved BACK buy time", () => {
+    const c = startClock(0, 0, 10 * 60 * MIN);
+    // 5 minutes really pass, but the user sets the date back by an hour
+    expect(elapsedMs(c, 5 * MIN, 10 * 60 * MIN - 55 * MIN)).toBe(5 * MIN);
   });
+
+  it("does not let phone sleep pause the timer (monotonic stands still, wall clock does not)", () => {
+    const c = startClock(0, 0, 0);
+    expect(elapsedMs(c, 1 * MIN, 10 * MIN)).toBe(10 * MIN);
+  });
+
+  it("only ever costs the candidate time when the clock is moved forward", () => {
+    const c = startClock(0, 0, 0);
+    expect(elapsedMs(c, 2 * MIN, 3 * 60 * MIN)).toBe(3 * 60 * MIN);
+    expect(isExpired(30 * MIN, c, 2 * MIN, 3 * 60 * MIN)).toBe(true);
+  });
+
+  it("never reports negative elapsed time", () => {
+    const c = startClock(0, 1000, 1000);
+    expect(elapsedMs(c, 500, 400)).toBe(0);
+  });
+
+  it("counts the time the app was closed when it is reopened", () => {
+    // 10 minutes used when last saved; the app is reopened 20 minutes later
+    const base = resumedBaseMs(10 * MIN, 1_000_000, 1_000_000 + 20 * MIN);
+    expect(base).toBe(30 * MIN);
+    const c = startClock(base, 42, 1_000_000 + 20 * MIN);
+    expect(remainingMs(60 * MIN, c, 42, 1_000_000 + 20 * MIN)).toBe(30 * MIN);
+  });
+
+  it("a clock moved back while the app was closed adds nothing and subtracts nothing", () => {
+    expect(resumedBaseMs(10 * MIN, 5_000_000, 5_000_000 - 3 * 60 * MIN)).toBe(10 * MIN);
+  });
+
   it("expires exactly at the limit and never goes negative", () => {
-    const c = startClock(0, 0);
-    expect(isExpired(1000, c, 999)).toBe(false);
-    expect(isExpired(1000, c, 1000)).toBe(true);
-    expect(remainingMs(1000, c, 99_999)).toBe(0);
+    const c = startClock(0, 0, 0);
+    expect(isExpired(1000, c, 999, 999)).toBe(false);
+    expect(isExpired(1000, c, 1000, 1000)).toBe(true);
+    expect(remainingMs(1000, c, 99_999, 99_999)).toBe(0);
   });
+
   it("formats mm:ss and rounds partial seconds up", () => {
     expect(formatClock(0)).toBe("00:00");
     expect(formatClock(61_000)).toBe("01:01");
     expect(formatClock(59_001)).toBe("01:00");
-    expect(formatClock(30 * 60_000)).toBe("30:00");
+    expect(formatClock(30 * MIN)).toBe("30:00");
   });
 });
 

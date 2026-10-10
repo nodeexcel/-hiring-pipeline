@@ -16,8 +16,10 @@ export interface Session {
   answers?: EncryptedBlob;
   flagged: string[];
   index: number;
-  /** Monotonic time already used. Restored so a restart cannot reset the clock. */
+  /** Time used when this was saved. Restored so a restart cannot reset the clock. */
   elapsedMs: number;
+  /** Wall clock (epoch ms) at save time: lets a restart count the time the app was closed. */
+  savedAtWall: number;
   started: boolean;
   /** Submitted or timed out: only the upload is left. */
   finished: boolean;
