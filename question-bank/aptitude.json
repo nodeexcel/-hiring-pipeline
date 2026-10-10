@@ -1,0 +1,2034 @@
+[
+  {
+    "section": "Quantitative",
+    "topic": "Percentages",
+    "difficulty": "easy",
+    "body": "What is 25% of 480?",
+    "options": [
+      "120",
+      "144",
+      "132",
+      "108"
+    ],
+    "answer_index": 0,
+    "external_id": "f6e52d8fba176499",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Percentages",
+    "difficulty": "easy",
+    "body": "What is 36% of 150?",
+    "options": [
+      "64",
+      "54",
+      "59",
+      "49"
+    ],
+    "answer_index": 1,
+    "external_id": "c73276164f1a841c",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Percentages",
+    "difficulty": "medium",
+    "body": "The price of an article is Rs. 1000. It is first increased by 20% and then decreased by 10%. What is the final price in Rs.?",
+    "options": [
+      "1080",
+      "1130",
+      "1030",
+      "1000"
+    ],
+    "answer_index": 0,
+    "external_id": "54462bcaf46ada33",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Percentages",
+    "difficulty": "medium",
+    "body": "The price of an article is Rs. 2500. It is first increased by 10% and then decreased by 20%. What is the final price in Rs.?",
+    "options": [
+      "2075",
+      "2500",
+      "2325",
+      "2200"
+    ],
+    "answer_index": 3,
+    "external_id": "e14ffd3fd6ed37a0",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Ratio and proportion",
+    "difficulty": "easy",
+    "body": "Rs. 1800 is divided among three people in the ratio 2:3:5. What is the share of the second person in Rs.?",
+    "options": [
+      "900",
+      "630",
+      "540",
+      "360"
+    ],
+    "answer_index": 2,
+    "external_id": "76f772b668c5559e",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Ratio and proportion",
+    "difficulty": "easy",
+    "body": "Rs. 3000 is divided among three people in the ratio 1:2:3. What is the share of the second person in Rs.?",
+    "options": [
+      "1150",
+      "1000",
+      "500",
+      "1500"
+    ],
+    "answer_index": 1,
+    "external_id": "702760ac4936b42b",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Averages",
+    "difficulty": "medium",
+    "body": "The average of 6 numbers is 24. When one number, 34, is removed, what is the average of the remaining numbers?",
+    "options": [
+      "24",
+      "21",
+      "23",
+      "22"
+    ],
+    "answer_index": 3,
+    "external_id": "4fccf8cb6f82722d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Averages",
+    "difficulty": "medium",
+    "body": "The average of 8 numbers is 15. When one number, 36, is removed, what is the average of the remaining numbers?",
+    "options": [
+      "11",
+      "13",
+      "15",
+      "12"
+    ],
+    "answer_index": 3,
+    "external_id": "f4272790fb800ba1",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Speed, distance and time",
+    "difficulty": "medium",
+    "body": "A vehicle travels at 40 km/h for 3 hours and then at 60 km/h for 2 hours. What is its average speed for the whole journey in km/h?",
+    "options": [
+      "46",
+      "48",
+      "50",
+      "52"
+    ],
+    "answer_index": 1,
+    "external_id": "4e612978a95b0226",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Speed, distance and time",
+    "difficulty": "medium",
+    "body": "A vehicle travels at 30 km/h for 4 hours and then at 50 km/h for 4 hours. What is its average speed for the whole journey in km/h?",
+    "options": [
+      "42",
+      "40",
+      "43",
+      "38"
+    ],
+    "answer_index": 1,
+    "external_id": "28ea2f78733b6aec",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Time and work",
+    "difficulty": "medium",
+    "body": "A can finish a job in 12 days and B can finish it in 24 days. Working together, in how many days will they finish it?",
+    "options": [
+      "18",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer_index": 1,
+    "external_id": "5359cd7579c62a7d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Time and work",
+    "difficulty": "medium",
+    "body": "A can finish a job in 10 days and B can finish it in 15 days. Working together, in how many days will they finish it?",
+    "options": [
+      "12",
+      "7",
+      "6",
+      "8"
+    ],
+    "answer_index": 2,
+    "external_id": "574d9f787e54b3a8",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Profit and loss",
+    "difficulty": "easy",
+    "body": "An item bought for Rs. 800 is sold for Rs. 1000. What is the profit percentage?",
+    "options": [
+      "35%",
+      "30%",
+      "20%",
+      "25%"
+    ],
+    "answer_index": 3,
+    "external_id": "b58abc6aa8f0ed83",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Profit and loss",
+    "difficulty": "easy",
+    "body": "An item bought for Rs. 1250 is sold for Rs. 1500. What is the profit percentage?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "15%"
+    ],
+    "answer_index": 0,
+    "external_id": "7eb0832c69738958",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Simple interest",
+    "difficulty": "easy",
+    "body": "What is the simple interest on Rs. 5000 at 8% per annum for 3 years, in Rs.?",
+    "options": [
+      "1200",
+      "1150",
+      "1300",
+      "400"
+    ],
+    "answer_index": 0,
+    "external_id": "5f744a791a015fa2",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Simple interest",
+    "difficulty": "easy",
+    "body": "What is the simple interest on Rs. 12000 at 5% per annum for 2 years, in Rs.?",
+    "options": [
+      "1440",
+      "600",
+      "1200",
+      "1080"
+    ],
+    "answer_index": 2,
+    "external_id": "4e668e47753ab4aa",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Compound interest",
+    "difficulty": "medium",
+    "body": "What is the compound interest on Rs. 10000 at 10% per annum, compounded annually, for 2 years, in Rs.?",
+    "options": [
+      "2050",
+      "2200",
+      "2000",
+      "2100"
+    ],
+    "answer_index": 3,
+    "external_id": "c651363e46c82c4d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Compound interest",
+    "difficulty": "medium",
+    "body": "What is the compound interest on Rs. 20000 at 5% per annum, compounded annually, for 2 years, in Rs.?",
+    "options": [
+      "2000",
+      "1950",
+      "2050",
+      "2250"
+    ],
+    "answer_index": 2,
+    "external_id": "043d60700f3555d5",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Ages",
+    "difficulty": "easy",
+    "body": "The sum of the ages of two siblings is 46 years and the difference between their ages is 6 years. What is the age of the elder sibling?",
+    "options": [
+      "28",
+      "24",
+      "23",
+      "26"
+    ],
+    "answer_index": 3,
+    "external_id": "d0ad3bfedf00b295",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Ages",
+    "difficulty": "easy",
+    "body": "The sum of the ages of two siblings is 58 years and the difference between their ages is 8 years. What is the age of the elder sibling?",
+    "options": [
+      "33",
+      "29",
+      "35",
+      "31"
+    ],
+    "answer_index": 0,
+    "external_id": "dfc9e3404819dc62",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Number system",
+    "difficulty": "easy",
+    "body": "What is the smallest number that is exactly divisible by 4, 6 and 10?",
+    "options": [
+      "240",
+      "60",
+      "30",
+      "120"
+    ],
+    "answer_index": 1,
+    "external_id": "872c8a26e30c556d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Number system",
+    "difficulty": "easy",
+    "body": "What is the smallest number that is exactly divisible by 6, 8 and 12?",
+    "options": [
+      "24",
+      "48",
+      "12",
+      "576"
+    ],
+    "answer_index": 0,
+    "external_id": "67390932f31697f8",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Series sums",
+    "difficulty": "easy",
+    "body": "What is the sum of the first 15 natural numbers?",
+    "options": [
+      "135",
+      "225",
+      "120",
+      "105"
+    ],
+    "answer_index": 2,
+    "external_id": "b1c2d3bc9568efc0",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Series sums",
+    "difficulty": "easy",
+    "body": "What is the sum of the first 20 natural numbers?",
+    "options": [
+      "210",
+      "400",
+      "230",
+      "190"
+    ],
+    "answer_index": 0,
+    "external_id": "fde82cc023ee904a",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "body": "A bag holds 5 red balls and 3 blue balls. One ball is drawn at random. What is the probability that it is red?",
+    "options": [
+      "5/3",
+      "3/8",
+      "2/3",
+      "5/8"
+    ],
+    "answer_index": 3,
+    "external_id": "25295c4920342e49",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "body": "A bag holds 4 red balls and 8 blue balls. One ball is drawn at random. What is the probability that it is red?",
+    "options": [
+      "1/3",
+      "5/13",
+      "2/3",
+      "1/2"
+    ],
+    "answer_index": 0,
+    "external_id": "561dfea2af7d606f",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Permutations and combinations",
+    "difficulty": "medium",
+    "body": "In how many ways can a committee of 2 people be chosen from a group of 6 people?",
+    "options": [
+      "30",
+      "12",
+      "21",
+      "15"
+    ],
+    "answer_index": 3,
+    "external_id": "b8157a96de0a9778",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Permutations and combinations",
+    "difficulty": "medium",
+    "body": "In how many ways can a committee of 2 people be chosen from a group of 8 people?",
+    "options": [
+      "36",
+      "28",
+      "16",
+      "56"
+    ],
+    "answer_index": 1,
+    "external_id": "98e9524b3ebbbdea",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Permutations and combinations",
+    "difficulty": "easy",
+    "body": "In how many different ways can 4 people stand in a row?",
+    "options": [
+      "16",
+      "28",
+      "12",
+      "24"
+    ],
+    "answer_index": 3,
+    "external_id": "dbc4c401165708d1",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Permutations and combinations",
+    "difficulty": "easy",
+    "body": "In how many different ways can 5 people stand in a row?",
+    "options": [
+      "60",
+      "120",
+      "125",
+      "25"
+    ],
+    "answer_index": 1,
+    "external_id": "b35d14e7e88c718f",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Series sums",
+    "difficulty": "easy",
+    "body": "What is the sum of the first 12 odd natural numbers?",
+    "options": [
+      "132",
+      "144",
+      "24",
+      "156"
+    ],
+    "answer_index": 1,
+    "external_id": "1291014fce7e3f74",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Quantitative",
+    "topic": "Series sums",
+    "difficulty": "easy",
+    "body": "What is the sum of the first 25 odd natural numbers?",
+    "options": [
+      "650",
+      "50",
+      "600",
+      "625"
+    ],
+    "answer_index": 3,
+    "external_id": "bf9c0734449aa1b7",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "easy",
+    "body": "What comes next in the series: 7, 12, 17, 22, 27, ?",
+    "options": [
+      "32",
+      "35",
+      "29",
+      "38"
+    ],
+    "answer_index": 0,
+    "external_id": "f7e11722c43ceb6f",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "easy",
+    "body": "What comes next in the series: 100, 91, 82, 73, 64, ?",
+    "options": [
+      "61",
+      "49",
+      "67",
+      "55"
+    ],
+    "answer_index": 3,
+    "external_id": "0ba41523167139de",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "medium",
+    "body": "What comes next in the series: 3, 6, 12, 24, 48, ?",
+    "options": [
+      "86",
+      "96",
+      "116",
+      "106"
+    ],
+    "answer_index": 1,
+    "external_id": "61ad681865b996e7",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "medium",
+    "body": "What comes next in the series: 2, 6, 18, 54, 162, ?",
+    "options": [
+      "486",
+      "584",
+      "437",
+      "535"
+    ],
+    "answer_index": 0,
+    "external_id": "f1e6cd8cca59a422",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "medium",
+    "body": "What comes next in the series: 3, 6, 11, 18, 27, ?",
+    "options": [
+      "46",
+      "42",
+      "34",
+      "38"
+    ],
+    "answer_index": 3,
+    "external_id": "8a7de1369e45edf0",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "medium",
+    "body": "What comes next in the series: 6, 9, 14, 21, 30, ?",
+    "options": [
+      "41",
+      "37",
+      "49",
+      "45"
+    ],
+    "answer_index": 0,
+    "external_id": "cd62b69a728e8cf6",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "medium",
+    "body": "What comes next in the series: 4, 6, 10, 16, 24, ?",
+    "options": [
+      "34",
+      "37",
+      "31",
+      "40"
+    ],
+    "answer_index": 0,
+    "external_id": "62e330758807e228",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "medium",
+    "body": "What comes next in the series: 10, 12, 16, 22, 30, ?",
+    "options": [
+      "44",
+      "48",
+      "36",
+      "40"
+    ],
+    "answer_index": 3,
+    "external_id": "8c94748e5594e9fd",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "hard",
+    "body": "What comes next in the series: 3, 6, 12, 15, 30, ?",
+    "options": [
+      "33",
+      "39",
+      "30",
+      "36"
+    ],
+    "answer_index": 0,
+    "external_id": "f3c422c12d1b7e21",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Number series",
+    "difficulty": "hard",
+    "body": "What comes next in the series: 2, 3, 5, 8, 13, ?",
+    "options": [
+      "23",
+      "21",
+      "19",
+      "25"
+    ],
+    "answer_index": 1,
+    "external_id": "59369f12c2c48e41",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Coding and decoding",
+    "difficulty": "easy",
+    "body": "In a certain code, every letter of a word is replaced by the letter 1 place after it in the alphabet, so CAT is written as DBU. How is DOG written in this code?",
+    "options": [
+      "GRJ",
+      "DOG",
+      "FQI",
+      "EPH"
+    ],
+    "answer_index": 3,
+    "external_id": "3c4dfce0f864950d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Coding and decoding",
+    "difficulty": "easy",
+    "body": "In a certain code, every letter of a word is replaced by the letter 2 places after it in the alphabet, so SUN is written as UWP. How is MOON written in this code?",
+    "options": [
+      "NPPO",
+      "OQQP",
+      "PRRQ",
+      "QSSR"
+    ],
+    "answer_index": 1,
+    "external_id": "390979db33fed65a",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Coding and decoding",
+    "difficulty": "easy",
+    "body": "In a certain code, every letter of a word is replaced by the letter 3 places after it in the alphabet, so BAG is written as EDJ. How is FIRE written in this code?",
+    "options": [
+      "KNWJ",
+      "ILUH",
+      "HKTG",
+      "JMVI"
+    ],
+    "answer_index": 1,
+    "external_id": "047127f4313e704e",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Coding and decoding",
+    "difficulty": "medium",
+    "body": "If A=1, B=2, C=3 and so on up to Z=26, what is the sum of the values of the letters in the word DEAR?",
+    "options": [
+      "28",
+      "31",
+      "25",
+      "34"
+    ],
+    "answer_index": 0,
+    "external_id": "d397a4b7ca418401",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Coding and decoding",
+    "difficulty": "medium",
+    "body": "If A=1, B=2, C=3 and so on up to Z=26, what is the sum of the values of the letters in the word FACE?",
+    "options": [
+      "13",
+      "15",
+      "17",
+      "19"
+    ],
+    "answer_index": 1,
+    "external_id": "5b0ba151ab50309e",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Direction sense",
+    "difficulty": "medium",
+    "body": "A man starts from a point and walks 5 km north, then turns right and walks 3 km, then turns right and walks 5 km. How far is he from the starting point, in km?",
+    "options": [
+      "3",
+      "2",
+      "5",
+      "4"
+    ],
+    "answer_index": 0,
+    "external_id": "fed98deb4c0f5fd3",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Direction sense",
+    "difficulty": "medium",
+    "body": "A man starts from a point and walks 8 km north, then turns left and walks 6 km, then turns left and walks 8 km. How far is he from the starting point, in km?",
+    "options": [
+      "7",
+      "8",
+      "5",
+      "6"
+    ],
+    "answer_index": 3,
+    "external_id": "a019ee8fe4e75007",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Direction sense",
+    "difficulty": "medium",
+    "body": "A man starts from a point and walks 4 km north, then turns right and walks 3 km. How far is he from the starting point, in km?",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "7"
+    ],
+    "answer_index": 1,
+    "external_id": "5e2fd4ddbad90357",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Direction sense",
+    "difficulty": "medium",
+    "body": "A man starts from a point and walks 12 km north, then turns left and walks 5 km. How far is he from the starting point, in km?",
+    "options": [
+      "12",
+      "14",
+      "15",
+      "13"
+    ],
+    "answer_index": 3,
+    "external_id": "d6f05164960fccfa",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Direction sense",
+    "difficulty": "medium",
+    "body": "A man starts from a point and walks 10 km north, then turns right and walks 10 km, then turns right and walks 10 km, then turns right and walks 10 km. How far is he from the starting point, in km?",
+    "options": [
+      "0",
+      "2",
+      "5",
+      "1"
+    ],
+    "answer_index": 0,
+    "external_id": "aa3c0b52417043e8",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Ranking and order",
+    "difficulty": "easy",
+    "body": "In a row of people, Ravi is 7th from the left end and 12th from the right end. How many people are there in the row?",
+    "options": [
+      "19",
+      "18",
+      "20",
+      "17"
+    ],
+    "answer_index": 1,
+    "external_id": "661426a651160a96",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Ranking and order",
+    "difficulty": "easy",
+    "body": "In a row of people, Ravi is 15th from the left end and 9th from the right end. How many people are there in the row?",
+    "options": [
+      "22",
+      "24",
+      "23",
+      "25"
+    ],
+    "answer_index": 2,
+    "external_id": "bf201fc1170a302f",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Ranking and order",
+    "difficulty": "easy",
+    "body": "In a row of people, Ravi is 4th from the left end and 20th from the right end. How many people are there in the row?",
+    "options": [
+      "25",
+      "22",
+      "24",
+      "23"
+    ],
+    "answer_index": 3,
+    "external_id": "ca3e3a1e560619e4",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Ranking and order",
+    "difficulty": "easy",
+    "body": "In a class of 40 students, Meena ranks 9th from the top. What is her rank from the bottom?",
+    "options": [
+      "31",
+      "32",
+      "9",
+      "33"
+    ],
+    "answer_index": 1,
+    "external_id": "df13dff0bef4def7",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Ranking and order",
+    "difficulty": "easy",
+    "body": "In a class of 35 students, Meena ranks 14th from the top. What is her rank from the bottom?",
+    "options": [
+      "22",
+      "21",
+      "14",
+      "23"
+    ],
+    "answer_index": 0,
+    "external_id": "6d054071eebbb75c",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "body": "Statements: All cats are pets. All pets are animals. Taking the statements as true, which one conclusion definitely follows?",
+    "options": [
+      "Some animals are cats",
+      "All animals are cats",
+      "All cats are animals",
+      "None of these follows"
+    ],
+    "answer_index": 2,
+    "external_id": "1fbc9001eb100f7b",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "body": "Statements: All pens are tools. No tools are toys. Taking the statements as true, which one conclusion definitely follows?",
+    "options": [
+      "All toys are pens",
+      "No pens are toys",
+      "None of these follows",
+      "Some pens are toys"
+    ],
+    "answer_index": 1,
+    "external_id": "9f4a0f01dd63286c",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "body": "Statements: Some doctors are writers. All writers are readers. Taking the statements as true, which one conclusion definitely follows?",
+    "options": [
+      "Some doctors are readers",
+      "All doctors are readers",
+      "None of these follows",
+      "No doctors are readers"
+    ],
+    "answer_index": 0,
+    "external_id": "bb729acc9bad2e71",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "body": "Statements: Some students are athletes. No athletes are teachers. Taking the statements as true, which one conclusion definitely follows?",
+    "options": [
+      "Some students are teachers",
+      "None of these follows",
+      "All students are athletes",
+      "Some students are not teachers"
+    ],
+    "answer_index": 3,
+    "external_id": "2741ec6309f82db5",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "body": "Statements: No birds are fish. All sparrows are birds. Taking the statements as true, which one conclusion definitely follows?",
+    "options": [
+      "Some sparrows are fish",
+      "No sparrows are fish",
+      "All fish are sparrows",
+      "None of these follows"
+    ],
+    "answer_index": 1,
+    "external_id": "a1dd481ad0d46ea9",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Blood relations",
+    "difficulty": "medium",
+    "body": "Pointing to a man, Riya says, \"He is the son of my mother's only brother.\" How is the man related to Riya?",
+    "options": [
+      "Brother",
+      "Nephew",
+      "Uncle",
+      "Cousin"
+    ],
+    "answer_index": 3,
+    "external_id": "e434cf43938174e1",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Blood relations",
+    "difficulty": "medium",
+    "body": "A is the sister of B. B is the father of C. How is A related to C?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Grandmother",
+      "Aunt"
+    ],
+    "answer_index": 3,
+    "external_id": "a985091f9a1d2390",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Blood relations",
+    "difficulty": "medium",
+    "body": "Pointing to a photograph, Arun says, \"She is the daughter of my father's only son.\" How is the girl related to Arun?",
+    "options": [
+      "Daughter",
+      "Niece",
+      "Sister",
+      "Cousin"
+    ],
+    "answer_index": 0,
+    "external_id": "7c14dac81530ca46",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Blood relations",
+    "difficulty": "medium",
+    "body": "P is the brother of Q. Q is the mother of R. How is P related to R?",
+    "options": [
+      "Father",
+      "Grandfather",
+      "Maternal uncle",
+      "Paternal uncle"
+    ],
+    "answer_index": 2,
+    "external_id": "5c6cfc575a24b2b8",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Logical reasoning",
+    "topic": "Blood relations",
+    "difficulty": "medium",
+    "body": "Neha's mother is the only daughter of Karan's mother. How is Karan related to Neha?",
+    "options": [
+      "Father",
+      "Cousin",
+      "Maternal uncle",
+      "Brother"
+    ],
+    "answer_index": 2,
+    "external_id": "edcdef641a446edd",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"abundant\".",
+    "options": [
+      "plentiful",
+      "tiny",
+      "rare",
+      "hidden"
+    ],
+    "answer_index": 0,
+    "external_id": "e0d5cafc33ec8c9a",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"candid\".",
+    "options": [
+      "secretive",
+      "angry",
+      "frank",
+      "clumsy"
+    ],
+    "answer_index": 2,
+    "external_id": "e938123d3ab69ed7",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"diligent\".",
+    "options": [
+      "careless",
+      "boastful",
+      "sleepy",
+      "hardworking"
+    ],
+    "answer_index": 3,
+    "external_id": "864bb6121f79308a",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"obsolete\".",
+    "options": [
+      "popular",
+      "outdated",
+      "fragile",
+      "modern"
+    ],
+    "answer_index": 1,
+    "external_id": "23beb6adefa34d6d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"reluctant\".",
+    "options": [
+      "nervous",
+      "tired",
+      "unwilling",
+      "eager"
+    ],
+    "answer_index": 2,
+    "external_id": "ed791a14ab715e93",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"meticulous\".",
+    "options": [
+      "rude",
+      "very careful",
+      "forgetful",
+      "quick"
+    ],
+    "answer_index": 1,
+    "external_id": "d98e4896cf888a6d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"frugal\".",
+    "options": [
+      "thrifty",
+      "wealthy",
+      "greedy",
+      "wasteful"
+    ],
+    "answer_index": 0,
+    "external_id": "6af0dfbe8307f28a",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Synonyms",
+    "difficulty": "easy",
+    "body": "Choose the word closest in meaning to \"lucid\".",
+    "options": [
+      "heavy",
+      "silent",
+      "clear",
+      "confusing"
+    ],
+    "answer_index": 2,
+    "external_id": "c2254327a93d7800",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Antonyms",
+    "difficulty": "easy",
+    "body": "Choose the word opposite in meaning to \"expand\".",
+    "options": [
+      "extend",
+      "inflate",
+      "contract",
+      "grow"
+    ],
+    "answer_index": 2,
+    "external_id": "d05a6a07bbe3bf0d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Antonyms",
+    "difficulty": "easy",
+    "body": "Choose the word opposite in meaning to \"ancient\".",
+    "options": [
+      "old",
+      "modern",
+      "antique",
+      "historic"
+    ],
+    "answer_index": 1,
+    "external_id": "8b82e67c550b0173",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Antonyms",
+    "difficulty": "easy",
+    "body": "Choose the word opposite in meaning to \"scarce\".",
+    "options": [
+      "limited",
+      "meagre",
+      "plentiful",
+      "rare"
+    ],
+    "answer_index": 2,
+    "external_id": "6ed5e216fad779e3",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Antonyms",
+    "difficulty": "easy",
+    "body": "Choose the word opposite in meaning to \"transparent\".",
+    "options": [
+      "glassy",
+      "clear",
+      "thin",
+      "opaque"
+    ],
+    "answer_index": 3,
+    "external_id": "bd9ce53683e9c43e",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Antonyms",
+    "difficulty": "easy",
+    "body": "Choose the word opposite in meaning to \"generous\".",
+    "options": [
+      "polite",
+      "kind",
+      "wealthy",
+      "stingy"
+    ],
+    "answer_index": 3,
+    "external_id": "e8b4ebdb9514d677",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Antonyms",
+    "difficulty": "easy",
+    "body": "Choose the word opposite in meaning to \"victory\".",
+    "options": [
+      "defeat",
+      "conquest",
+      "success",
+      "triumph"
+    ],
+    "answer_index": 0,
+    "external_id": "1d0b8a1dadf65fb1",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: Everyone in the room ___ waiting for the result.",
+    "options": [
+      "were",
+      "is",
+      "are",
+      "have been"
+    ],
+    "answer_index": 1,
+    "external_id": "e4132b0878ab084e",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: She has been working at this company ___ 2019.",
+    "options": [
+      "from",
+      "during",
+      "since",
+      "for"
+    ],
+    "answer_index": 2,
+    "external_id": "ff00df4cdcd62ccd",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: If I ___ you, I would apologise at once.",
+    "options": [
+      "were",
+      "was",
+      "will be",
+      "am"
+    ],
+    "answer_index": 0,
+    "external_id": "6967639553b2e054",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: Each of the students ___ a laptop.",
+    "options": [
+      "are having",
+      "has",
+      "having",
+      "have"
+    ],
+    "answer_index": 1,
+    "external_id": "6702bd2ad1ed89b8",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: She is afraid ___ the dark.",
+    "options": [
+      "at",
+      "with",
+      "from",
+      "of"
+    ],
+    "answer_index": 3,
+    "external_id": "208cd122152cd929",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: I look forward to ___ you next week.",
+    "options": [
+      "meeting",
+      "meet",
+      "have met",
+      "met"
+    ],
+    "answer_index": 0,
+    "external_id": "a244570d241f7609",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: She is taller ___ her sister.",
+    "options": [
+      "then",
+      "than",
+      "from",
+      "as"
+    ],
+    "answer_index": 1,
+    "external_id": "cfd5db41bd9ab6c6",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: Hardly had we left the house ___ it began to rain.",
+    "options": [
+      "when",
+      "while",
+      "that",
+      "as"
+    ],
+    "answer_index": 0,
+    "external_id": "2a991328ca2a9627",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: The committee ___ its decision yesterday.",
+    "options": [
+      "announcing",
+      "announce",
+      "announced",
+      "has announce"
+    ],
+    "answer_index": 2,
+    "external_id": "3d1b099d8d1886cf",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Grammar and usage",
+    "difficulty": "medium",
+    "body": "Fill in the blank: My brother, along with his friends, ___ coming to the party.",
+    "options": [
+      "is",
+      "have been",
+      "were",
+      "are"
+    ],
+    "answer_index": 0,
+    "external_id": "4c7fa4372ddc7e45",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Analogies",
+    "difficulty": "easy",
+    "body": "Complete the analogy: Doctor is to hospital as teacher is to ___.",
+    "options": [
+      "school",
+      "book",
+      "exam",
+      "student"
+    ],
+    "answer_index": 0,
+    "external_id": "bd9253cfd64e60b2",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Analogies",
+    "difficulty": "easy",
+    "body": "Complete the analogy: Pen is to write as knife is to ___.",
+    "options": [
+      "sharp",
+      "cut",
+      "steel",
+      "kitchen"
+    ],
+    "answer_index": 1,
+    "external_id": "885fa793586b1d13",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Analogies",
+    "difficulty": "easy",
+    "body": "Complete the analogy: Bird is to nest as bee is to ___.",
+    "options": [
+      "flower",
+      "sting",
+      "hive",
+      "honey"
+    ],
+    "answer_index": 2,
+    "external_id": "73c8736932e8af55",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Odd one out",
+    "difficulty": "easy",
+    "body": "Which one does not belong with the others: Mercury, Venus, Moon, Mars?",
+    "options": [
+      "Moon",
+      "Mercury",
+      "Venus",
+      "Mars"
+    ],
+    "answer_index": 0,
+    "external_id": "98f4ccd32a036238",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Odd one out",
+    "difficulty": "easy",
+    "body": "Which one does not belong with the others: Oxygen, Nitrogen, Carbon, Granite?",
+    "options": [
+      "Nitrogen",
+      "Granite",
+      "Oxygen",
+      "Carbon"
+    ],
+    "answer_index": 1,
+    "external_id": "e41048d94ca158c7",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Verbal ability",
+    "topic": "Odd one out",
+    "difficulty": "easy",
+    "body": "Which one does not belong with the others: Triangle, Square, Circle, Cube?",
+    "options": [
+      "Square",
+      "Cube",
+      "Circle",
+      "Triangle"
+    ],
+    "answer_index": 1,
+    "external_id": "8875f6610ba6bb39",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Tables and totals",
+    "difficulty": "easy",
+    "body": "Units of laptops sold by a store: Jan: 180, Feb: 200, Mar: 260, Apr: 220. What is the total number of units sold in the four months?",
+    "options": [
+      "946",
+      "774",
+      "860",
+      "1032"
+    ],
+    "answer_index": 2,
+    "external_id": "36d566e407021e30",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Tables and totals",
+    "difficulty": "easy",
+    "body": "Units of tablets sold by a store: Jan: 130, Feb: 160, Mar: 230, Apr: 80. What is the total number of units sold in the four months?",
+    "options": [
+      "660",
+      "720",
+      "540",
+      "600"
+    ],
+    "answer_index": 3,
+    "external_id": "df15942cd8c979c6",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Tables and totals",
+    "difficulty": "easy",
+    "body": "Units of laptops sold by a store: Jan: 290, Feb: 180, Mar: 130, Apr: 230. What is the total number of units sold in the four months?",
+    "options": [
+      "830",
+      "913",
+      "747",
+      "996"
+    ],
+    "answer_index": 0,
+    "external_id": "e494b641713093b6",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Tables and totals",
+    "difficulty": "easy",
+    "body": "Units of phones sold by a store: Jan: 220, Feb: 210, Mar: 290, Apr: 310. What is the total number of units sold in the four months?",
+    "options": [
+      "1236",
+      "927",
+      "1030",
+      "1133"
+    ],
+    "answer_index": 2,
+    "external_id": "013ad84059ffe960",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Tables and totals",
+    "difficulty": "easy",
+    "body": "Units of phones sold by a store: Jan: 110, Feb: 160, Mar: 180, Apr: 290. What is the total number of units sold in the four months?",
+    "options": [
+      "814",
+      "740",
+      "666",
+      "888"
+    ],
+    "answer_index": 1,
+    "external_id": "eccdce5b79e4654c",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage change",
+    "difficulty": "medium",
+    "body": "Units of printers sold by a store: Jan: 250, Feb: 170, Mar: 80, Apr: 110. What is the percentage decrease in sales from Jan to Feb?",
+    "options": [
+      "42%",
+      "27%",
+      "32%",
+      "37%"
+    ],
+    "answer_index": 2,
+    "external_id": "10c8aed097d0adae",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage change",
+    "difficulty": "medium",
+    "body": "Units of laptops sold by a store: Jan: 80, Feb: 120, Mar: 270, Apr: 100. What is the percentage increase in sales from Jan to Feb?",
+    "options": [
+      "50%",
+      "55%",
+      "60%",
+      "45%"
+    ],
+    "answer_index": 0,
+    "external_id": "0741655f228e7101",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage change",
+    "difficulty": "medium",
+    "body": "Units of tablets sold by a store: Jan: 120, Feb: 150, Mar: 110, Apr: 100. What is the percentage increase in sales from Jan to Feb?",
+    "options": [
+      "30%",
+      "35%",
+      "20%",
+      "25%"
+    ],
+    "answer_index": 3,
+    "external_id": "3f7b2514bf7be133",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage change",
+    "difficulty": "medium",
+    "body": "Units of tablets sold by a store: Jan: 200, Feb: 300, Mar: 230, Apr: 290. What is the percentage increase in sales from Jan to Feb?",
+    "options": [
+      "45%",
+      "50%",
+      "55%",
+      "60%"
+    ],
+    "answer_index": 1,
+    "external_id": "d700528210e4a6b9",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage change",
+    "difficulty": "medium",
+    "body": "Units of laptops sold by a store: Jan: 100, Feb: 320, Mar: 160, Apr: 180. What is the percentage increase in sales from Jan to Feb?",
+    "options": [
+      "215%",
+      "220%",
+      "230%",
+      "225%"
+    ],
+    "answer_index": 1,
+    "external_id": "3ad24bd67696690f",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Averages from data",
+    "difficulty": "easy",
+    "body": "Units of tablets sold by a store: Jan: 270, Feb: 120, Mar: 200, Apr: 170. What is the average monthly sales?",
+    "options": [
+      "209",
+      "228",
+      "190",
+      "171"
+    ],
+    "answer_index": 2,
+    "external_id": "f90396fac6ed72de",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Averages from data",
+    "difficulty": "easy",
+    "body": "Units of phones sold by a store: Jan: 210, Feb: 230, Mar: 170, Apr: 110. What is the average monthly sales?",
+    "options": [
+      "180",
+      "198",
+      "216",
+      "162"
+    ],
+    "answer_index": 0,
+    "external_id": "63bca6b6bfc61e29",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Averages from data",
+    "difficulty": "easy",
+    "body": "Units of printers sold by a store: Jan: 160, Feb: 320, Mar: 110, Apr: 190. What is the average monthly sales?",
+    "options": [
+      "175",
+      "195",
+      "215",
+      "235"
+    ],
+    "answer_index": 1,
+    "external_id": "b4f04afcc032c109",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Averages from data",
+    "difficulty": "easy",
+    "body": "Units of laptops sold by a store: Jan: 180, Feb: 310, Mar: 190, Apr: 140. What is the average monthly sales?",
+    "options": [
+      "245",
+      "185",
+      "205",
+      "225"
+    ],
+    "answer_index": 2,
+    "external_id": "5910a75ce84b20dc",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Averages from data",
+    "difficulty": "easy",
+    "body": "Units of phones sold by a store: Jan: 80, Feb: 240, Mar: 300, Apr: 140. What is the average monthly sales?",
+    "options": [
+      "190",
+      "171",
+      "228",
+      "209"
+    ],
+    "answer_index": 0,
+    "external_id": "a6d538ab2db0448c",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Comparisons",
+    "difficulty": "easy",
+    "body": "Units of phones sold by a store: Jan: 180, Feb: 280, Mar: 160, Apr: 250. What is the difference between the highest and the lowest monthly sales?",
+    "options": [
+      "132",
+      "144",
+      "120",
+      "108"
+    ],
+    "answer_index": 2,
+    "external_id": "d3f6ef4e21f98867",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Comparisons",
+    "difficulty": "easy",
+    "body": "Units of phones sold by a store: Jan: 240, Feb: 250, Mar: 300, Apr: 190. What is the difference between the highest and the lowest monthly sales?",
+    "options": [
+      "121",
+      "99",
+      "110",
+      "132"
+    ],
+    "answer_index": 2,
+    "external_id": "089cb0e21c4b999d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Comparisons",
+    "difficulty": "easy",
+    "body": "Units of laptops sold by a store: Jan: 300, Feb: 250, Mar: 140, Apr: 180. What is the difference between the highest and the lowest monthly sales?",
+    "options": [
+      "160",
+      "144",
+      "176",
+      "192"
+    ],
+    "answer_index": 0,
+    "external_id": "e904a4e442e14c3c",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Comparisons",
+    "difficulty": "easy",
+    "body": "Units of tablets sold by a store: Jan: 270, Feb: 140, Mar: 260, Apr: 230. What is the difference between the highest and the lowest monthly sales?",
+    "options": [
+      "130",
+      "117",
+      "143",
+      "156"
+    ],
+    "answer_index": 0,
+    "external_id": "7a52259d21118708",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Comparisons",
+    "difficulty": "easy",
+    "body": "Units of printers sold by a store: Jan: 290, Feb: 270, Mar: 260, Apr: 200. What is the difference between the highest and the lowest monthly sales?",
+    "options": [
+      "81",
+      "90",
+      "99",
+      "108"
+    ],
+    "answer_index": 1,
+    "external_id": "bf3b9b9acd741d39",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage share",
+    "difficulty": "medium",
+    "body": "Units of phones sold by a store: Jan: 250, Feb: 90, Mar: 280, Apr: 80. What percentage of the four-month total was sold in March?",
+    "options": [
+      "45%",
+      "50%",
+      "40%",
+      "35%"
+    ],
+    "answer_index": 2,
+    "external_id": "c8602f50131798c5",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage share",
+    "difficulty": "medium",
+    "body": "Units of printers sold by a store: Jan: 210, Feb: 160, Mar: 120, Apr: 310. What percentage of the four-month total was sold in March?",
+    "options": [
+      "20%",
+      "10%",
+      "25%",
+      "15%"
+    ],
+    "answer_index": 3,
+    "external_id": "043d289bfaccbb93",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage share",
+    "difficulty": "medium",
+    "body": "Units of printers sold by a store: Jan: 280, Feb: 200, Mar: 260, Apr: 300. What percentage of the four-month total was sold in March?",
+    "options": [
+      "20%",
+      "30%",
+      "25%",
+      "35%"
+    ],
+    "answer_index": 2,
+    "external_id": "11178091eb5985a7",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage share",
+    "difficulty": "medium",
+    "body": "Units of tablets sold by a store: Jan: 100, Feb: 160, Mar: 210, Apr: 280. What percentage of the four-month total was sold in March?",
+    "options": [
+      "33%",
+      "23%",
+      "38%",
+      "28%"
+    ],
+    "answer_index": 3,
+    "external_id": "34f5ae588eb40bcd",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Percentage share",
+    "difficulty": "medium",
+    "body": "Units of phones sold by a store: Jan: 90, Feb: 140, Mar: 160, Apr: 250. What percentage of the four-month total was sold in March?",
+    "options": [
+      "25%",
+      "20%",
+      "30%",
+      "35%"
+    ],
+    "answer_index": 0,
+    "external_id": "d1a9b58a9d2dbec1",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Ratios from data",
+    "difficulty": "medium",
+    "body": "Units of phones sold by a store: Jan: 130, Feb: 170, Mar: 120, Apr: 210. What is the ratio of April sales to January sales in its simplest form?",
+    "options": [
+      "4:7",
+      "21:13",
+      "17:13",
+      "13:21"
+    ],
+    "answer_index": 1,
+    "external_id": "96ea3a4e0826f09e",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Ratios from data",
+    "difficulty": "medium",
+    "body": "Units of phones sold by a store: Jan: 210, Feb: 160, Mar: 180, Apr: 310. What is the ratio of April sales to January sales in its simplest form?",
+    "options": [
+      "16:21",
+      "21:31",
+      "18:31",
+      "31:21"
+    ],
+    "answer_index": 3,
+    "external_id": "eb957949943545de",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Ratios from data",
+    "difficulty": "medium",
+    "body": "Units of phones sold by a store: Jan: 160, Feb: 270, Mar: 240, Apr: 140. What is the ratio of April sales to January sales in its simplest form?",
+    "options": [
+      "27:16",
+      "7:8",
+      "8:7",
+      "12:7"
+    ],
+    "answer_index": 1,
+    "external_id": "49fd149089576d54",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Ratios from data",
+    "difficulty": "medium",
+    "body": "Units of printers sold by a store: Jan: 220, Feb: 120, Mar: 310, Apr: 160. What is the ratio of April sales to January sales in its simplest form?",
+    "options": [
+      "8:11",
+      "11:8",
+      "31:16",
+      "6:11"
+    ],
+    "answer_index": 0,
+    "external_id": "aaad801daee4e659",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "section": "Data interpretation",
+    "topic": "Ratios from data",
+    "difficulty": "medium",
+    "body": "Units of printers sold by a store: Jan: 320, Feb: 110, Mar: 250, Apr: 210. What is the ratio of April sales to January sales in its simplest form?",
+    "options": [
+      "32:21",
+      "21:32",
+      "25:21",
+      "11:32"
+    ],
+    "answer_index": 1,
+    "external_id": "1f9d8f65ed1a622d",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  }
+]

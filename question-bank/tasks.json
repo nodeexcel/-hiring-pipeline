@@ -1,0 +1,50 @@
+[
+  {
+    "title": "REST API for a booking system",
+    "source": "generated-v1",
+    "brief": "Build a small REST API (any language) for booking time slots. Support creating slots, listing free slots, booking a slot and cancelling a booking. A slot cannot be double booked. Persist data, validate input, and return clear error codes.\n\nDeliver a README with run instructions, your design decisions, and at least 6 automated tests. We will discuss it in a short walkthrough call.",
+    "rubric": [
+      "Correctness",
+      "Data modelling",
+      "Error handling",
+      "Testing",
+      "Documentation"
+    ]
+  },
+  {
+    "title": "Command line log analyser",
+    "source": "generated-v1",
+    "brief": "Write a command line tool that reads a web server access log and prints the top 10 requested paths, the error rate (5xx) and the 95th percentile response time. Handle malformed lines without crashing and process a 500 MB file without loading it all into memory.\n\nInclude a small sample log, tests, and a README explaining your approach and its complexity.",
+    "rubric": [
+      "Correctness",
+      "Performance and memory",
+      "Robustness",
+      "Testing",
+      "Documentation"
+    ]
+  },
+  {
+    "title": "Rate limiter library",
+    "source": "generated-v1",
+    "brief": "Implement a reusable rate limiter library (token bucket or sliding window) with a clean interface that can limit by an arbitrary key. It must be safe under concurrent use and should be easy to swap its storage between memory and an external store.\n\nProvide tests that cover concurrency and the time boundary, and a README with usage examples and trade-offs.",
+    "rubric": [
+      "Correctness",
+      "API design",
+      "Concurrency safety",
+      "Testing",
+      "Documentation"
+    ]
+  },
+  {
+    "title": "Interactive data table",
+    "source": "generated-v1",
+    "brief": "Build a web page that loads a JSON list of at least 200 records and shows them in a table with sorting, text filtering and pagination. It must be keyboard accessible and stay responsive with 5,000 records.\n\nUse any framework. Include component or unit tests and a README describing your choices and how you checked accessibility.",
+    "rubric": [
+      "Correctness",
+      "Code quality",
+      "Accessibility",
+      "Performance",
+      "Testing"
+    ]
+  }
+]

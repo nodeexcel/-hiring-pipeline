@@ -1,0 +1,368 @@
+[
+  {
+    "title": "Sum of even numbers",
+    "difficulty": "easy",
+    "topics": [
+      "Arrays",
+      "Math"
+    ],
+    "statement": "Read an integer n, then n space-separated integers on the next line. Print the sum of the even numbers (0 if there are none).\n\nInput: n, then n integers.\nOutput: one integer.",
+    "tests": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expected_output": "6"
+      },
+      {
+        "input": "3\n2 4 6",
+        "expected_output": "12"
+      },
+      {
+        "input": "4\n1 3 5 7",
+        "expected_output": "0"
+      },
+      {
+        "input": "1\n10",
+        "expected_output": "10"
+      },
+      {
+        "input": "6\n-2 -4 1 0 8 9",
+        "expected_output": "2"
+      },
+      {
+        "input": "1\n7",
+        "expected_output": "0"
+      },
+      {
+        "input": "2\n-8 8",
+        "expected_output": "0"
+      },
+      {
+        "input": "20\n-6 13 -7 -15 -43 -45 -5 11 -46 38 -49 40 47 35 -6 -23 34 27 17 -34",
+        "expected_output": "20"
+      },
+      {
+        "input": "20\n-47 -50 -21 -20 -31 -26 -3 41 8 28 -13 -48 -33 -18 3 38 -6 48 43 -25",
+        "expected_output": "-46"
+      },
+      {
+        "input": "14\n-22 -5 15 -37 38 -30 38 7 -42 10 -7 -7 -4 -14",
+        "expected_output": "-26"
+      }
+    ],
+    "visible": 1,
+    "starter_code": {
+      "python": "import sys\n\ndata = sys.stdin.read()\n# read the input from data and print the answer\n",
+      "javascript": "const data = require(\"fs\").readFileSync(0, \"utf8\");\n// read the input from data and console.log the answer\n",
+      "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n    // read the input and print the answer\n  }\n}\n",
+      "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  // read the input and print the answer\n  return 0;\n}\n"
+    },
+    "external_id": "81cb6f2d1902802e",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "title": "Palindrome check",
+    "difficulty": "easy",
+    "topics": [
+      "Strings",
+      "Two pointers"
+    ],
+    "statement": "Read a string s of lowercase letters. Print YES if it reads the same forwards and backwards, otherwise NO.\n\nInput: one line with s (1 to 100 characters).\nOutput: YES or NO.",
+    "tests": [
+      {
+        "input": "level",
+        "expected_output": "YES"
+      },
+      {
+        "input": "hello",
+        "expected_output": "NO"
+      },
+      {
+        "input": "a",
+        "expected_output": "YES"
+      },
+      {
+        "input": "abba",
+        "expected_output": "YES"
+      },
+      {
+        "input": "abca",
+        "expected_output": "NO"
+      },
+      {
+        "input": "racecar",
+        "expected_output": "YES"
+      },
+      {
+        "input": "ab",
+        "expected_output": "NO"
+      },
+      {
+        "input": "noon",
+        "expected_output": "YES"
+      },
+      {
+        "input": "palindrome",
+        "expected_output": "NO"
+      },
+      {
+        "input": "zz",
+        "expected_output": "YES"
+      }
+    ],
+    "visible": 1,
+    "starter_code": {
+      "python": "import sys\n\ndata = sys.stdin.read()\n# read the input from data and print the answer\n",
+      "javascript": "const data = require(\"fs\").readFileSync(0, \"utf8\");\n// read the input from data and console.log the answer\n",
+      "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n    // read the input and print the answer\n  }\n}\n",
+      "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  // read the input and print the answer\n  return 0;\n}\n"
+    },
+    "external_id": "d5bae55629b71142",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "title": "Pair with target sum",
+    "difficulty": "medium",
+    "topics": [
+      "Arrays",
+      "Hash maps"
+    ],
+    "statement": "Given n integers and a target t, print YES if two different positions hold numbers that add up to t, otherwise NO.\n\nInput: first line n and t; second line n integers.\nOutput: YES or NO.",
+    "tests": [
+      {
+        "input": "5 9\n2 7 11 15 1",
+        "expected_output": "YES"
+      },
+      {
+        "input": "4 10\n1 2 3 4",
+        "expected_output": "NO"
+      },
+      {
+        "input": "2 6\n3 3",
+        "expected_output": "YES"
+      },
+      {
+        "input": "1 4\n2",
+        "expected_output": "NO"
+      },
+      {
+        "input": "6 0\n-3 1 3 5 -1 8",
+        "expected_output": "YES"
+      },
+      {
+        "input": "3 20\n10 5 7",
+        "expected_output": "NO"
+      },
+      {
+        "input": "5 8\n4 1 2 3 5",
+        "expected_output": "YES"
+      },
+      {
+        "input": "8 20\n9 35 -6 31 26 -6 -17 -13",
+        "expected_output": "YES"
+      },
+      {
+        "input": "10 49\n-6 -19 19 12 -5 5 35 40 -9 2",
+        "expected_output": "NO"
+      },
+      {
+        "input": "12 18\n-2 -4 15 0 31 -7 21 5 27 3 6 17",
+        "expected_output": "YES"
+      }
+    ],
+    "visible": 1,
+    "starter_code": {
+      "python": "import sys\n\ndata = sys.stdin.read()\n# read the input from data and print the answer\n",
+      "javascript": "const data = require(\"fs\").readFileSync(0, \"utf8\");\n// read the input from data and console.log the answer\n",
+      "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n    // read the input and print the answer\n  }\n}\n",
+      "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  // read the input and print the answer\n  return 0;\n}\n"
+    },
+    "external_id": "66fa845b79b2ea77",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "title": "Balanced brackets",
+    "difficulty": "medium",
+    "topics": [
+      "Stacks",
+      "Strings"
+    ],
+    "statement": "Read a string made only of the characters ( ) [ ] { }. Print YES if every bracket is closed by the matching type in the correct order, otherwise NO.\n\nInput: one line with the string (1 to 1000 characters).\nOutput: YES or NO.",
+    "tests": [
+      {
+        "input": "()",
+        "expected_output": "YES"
+      },
+      {
+        "input": "([]{})",
+        "expected_output": "YES"
+      },
+      {
+        "input": "([)]",
+        "expected_output": "NO"
+      },
+      {
+        "input": "(((",
+        "expected_output": "NO"
+      },
+      {
+        "input": "}{",
+        "expected_output": "NO"
+      },
+      {
+        "input": "{[()]}",
+        "expected_output": "YES"
+      },
+      {
+        "input": "(()",
+        "expected_output": "NO"
+      },
+      {
+        "input": "[]{}()",
+        "expected_output": "YES"
+      },
+      {
+        "input": "(]",
+        "expected_output": "NO"
+      },
+      {
+        "input": "((()))[[]]{}",
+        "expected_output": "YES"
+      }
+    ],
+    "visible": 1,
+    "starter_code": {
+      "python": "import sys\n\ndata = sys.stdin.read()\n# read the input from data and print the answer\n",
+      "javascript": "const data = require(\"fs\").readFileSync(0, \"utf8\");\n// read the input from data and console.log the answer\n",
+      "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n    // read the input and print the answer\n  }\n}\n",
+      "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  // read the input and print the answer\n  return 0;\n}\n"
+    },
+    "external_id": "63bbbc59ded5d635",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "title": "Most frequent number",
+    "difficulty": "medium",
+    "topics": [
+      "Arrays",
+      "Hash maps"
+    ],
+    "statement": "Given n integers, print the value that appears most often. If several values tie, print the smallest of them.\n\nInput: first line n; second line n integers.\nOutput: one integer.",
+    "tests": [
+      {
+        "input": "6\n1 2 2 3 3 4",
+        "expected_output": "2"
+      },
+      {
+        "input": "1\n5",
+        "expected_output": "5"
+      },
+      {
+        "input": "5\n7 7 7 1 1",
+        "expected_output": "7"
+      },
+      {
+        "input": "4\n4 3 2 1",
+        "expected_output": "1"
+      },
+      {
+        "input": "7\n-1 -1 2 2 3 3 0",
+        "expected_output": "-1"
+      },
+      {
+        "input": "3\n9 9 8",
+        "expected_output": "9"
+      },
+      {
+        "input": "24\n1 1 5 3 4 1 2 5 3 5 5 6 6 6 5 3 6 2 5 4 1 6 5 4",
+        "expected_output": "5"
+      },
+      {
+        "input": "29\n5 2 5 6 1 4 4 1 3 2 3 4 3 1 4 6 2 4 3 3 5 1 5 5 1 4 4 4 5",
+        "expected_output": "4"
+      },
+      {
+        "input": "39\n5 3 2 1 5 5 4 6 3 5 3 1 6 5 5 6 2 3 6 3 6 3 1 2 6 1 4 3 1 6 3 3 3 1 5 3 5 5 4",
+        "expected_output": "3"
+      },
+      {
+        "input": "34\n6 6 2 5 4 5 3 2 6 4 5 2 5 6 3 6 5 1 4 5 6 4 3 5 6 4 4 3 3 2 1 4 4 2",
+        "expected_output": "4"
+      }
+    ],
+    "visible": 1,
+    "starter_code": {
+      "python": "import sys\n\ndata = sys.stdin.read()\n# read the input from data and print the answer\n",
+      "javascript": "const data = require(\"fs\").readFileSync(0, \"utf8\");\n// read the input from data and console.log the answer\n",
+      "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n    // read the input and print the answer\n  }\n}\n",
+      "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  // read the input and print the answer\n  return 0;\n}\n"
+    },
+    "external_id": "f0db79845c4e8903",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  },
+  {
+    "title": "Longest run of ones",
+    "difficulty": "easy",
+    "topics": [
+      "Strings",
+      "Arrays"
+    ],
+    "statement": "Read a binary string made of 0 and 1. Print the length of the longest block of consecutive 1s (0 if there is none).\n\nInput: one line with the string (1 to 1000 characters).\nOutput: one integer.",
+    "tests": [
+      {
+        "input": "11011101",
+        "expected_output": "3"
+      },
+      {
+        "input": "0000",
+        "expected_output": "0"
+      },
+      {
+        "input": "1",
+        "expected_output": "1"
+      },
+      {
+        "input": "1111",
+        "expected_output": "4"
+      },
+      {
+        "input": "0101010",
+        "expected_output": "1"
+      },
+      {
+        "input": "1001110011",
+        "expected_output": "3"
+      },
+      {
+        "input": "0",
+        "expected_output": "0"
+      },
+      {
+        "input": "111000111111",
+        "expected_output": "6"
+      },
+      {
+        "input": "10",
+        "expected_output": "1"
+      },
+      {
+        "input": "01111110",
+        "expected_output": "6"
+      }
+    ],
+    "visible": 1,
+    "starter_code": {
+      "python": "import sys\n\ndata = sys.stdin.read()\n# read the input from data and print the answer\n",
+      "javascript": "const data = require(\"fs\").readFileSync(0, \"utf8\");\n// read the input from data and console.log the answer\n",
+      "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n    // read the input and print the answer\n  }\n}\n",
+      "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  // read the input and print the answer\n  return 0;\n}\n"
+    },
+    "external_id": "09b9530a0526aeab",
+    "source": "generated-v1",
+    "license": "Original content generated for this project. Human review required before activation."
+  }
+]
