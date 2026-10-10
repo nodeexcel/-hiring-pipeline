@@ -1,0 +1,24 @@
+node_modules
+.next
+.next-local
+.next-build
+.env
+.env.local
+.env.*
+!.env.example
+.expo
+dist
+*.log
+.DS_Store
+supabase/.branches
+supabase/.temp
+
+# generated native projects (expo prebuild)
+apps/mobile/android/
+apps/mobile/ios/
+test-results/
+playwright-report/
+apps/web/.next-local
+
+# third-party problem statements: regenerate with scripts/question-bank/import_codecontests.py
+question-bank/codecontests.json
