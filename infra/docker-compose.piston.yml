@@ -1,0 +1,13 @@
+# Piston code runner (works on cgroup v2 hosts incl. Docker Desktop).
+#   docker compose -f infra/docker-compose.piston.yml up -d
+#   ./infra/piston-install.sh      # installs node, python, java, gcc runtimes once
+services:
+  piston:
+    image: ghcr.io/engineer-man/piston
+    privileged: true
+    ports: ["2000:2000"]
+    tmpfs: ["/piston/jobs:exec,uid=1000,gid=1000,mode=711"]
+    volumes: [piston-packages:/piston/packages]
+    restart: unless-stopped
+volumes:
+  piston-packages:

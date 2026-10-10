@@ -1,0 +1,32 @@
+# Self-hosted Judge0 CE. Run: docker compose -f infra/docker-compose.judge0.yml up -d
+# Needs privileged containers (isolate sandbox). On Linux hosts use cgroup v1 or a
+# Judge0 build with cgroup v2 support; Docker Desktop for Mac may not work (see README).
+services:
+  server:
+    image: judge0/judge0:1.13.1
+    env_file: judge0.conf
+    ports: ["2358:2358"]
+    privileged: true
+    restart: unless-stopped
+    depends_on: [db, redis]
+  worker:
+    image: judge0/judge0:1.13.1
+    command: ["./scripts/workers"]
+    env_file: judge0.conf
+    privileged: true
+    restart: unless-stopped
+    depends_on: [db, redis]
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: judge0
+      POSTGRES_USER: judge0
+      POSTGRES_PASSWORD: judge0pg
+    volumes: [judge0-db:/var/lib/postgresql/data]
+    restart: unless-stopped
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--requirepass", "judge0redis"]
+    restart: unless-stopped
+volumes:
+  judge0-db:
