@@ -1,5 +1,6 @@
-import { Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from "react-native";
+import { StyleSheet, View, type StyleProp, type ViewStyle } from "react-native";
 import { fonts, radius, useTheme } from "../theme";
+import { PressableScale } from "./motion";
 import { Text } from "./Text";
 
 type Variant = "solid" | "outline" | "soft" | "ghost";
@@ -13,6 +14,7 @@ export function Button({
   onPress,
   variant = "soft",
   disabled,
+  compact,
   style,
   accessibilityHint,
 }: {
@@ -20,6 +22,8 @@ export function Button({
   onPress: () => void;
   variant?: Variant;
   disabled?: boolean;
+  /** Smaller text action for secondary controls that must fit several to a row. */
+  compact?: boolean;
   style?: StyleProp<ViewStyle>;
   accessibilityHint?: string;
 }) {
@@ -45,28 +49,31 @@ export function Button({
   const fg = variant === "solid" ? solidFg : variant === "soft" ? palette.primaryForeground : palette.foreground;
 
   return (
-    <Pressable
+    <PressableScale
       onPress={onPress}
       disabled={disabled}
       accessibilityRole="button"
       accessibilityLabel={label}
       accessibilityHint={accessibilityHint}
       accessibilityState={{ disabled: !!disabled }}
-      style={({ pressed }) => [styles.base, corners, look, { opacity: disabled ? 0.4 : pressed ? 0.85 : 1 }, style]}
+      style={[styles.base, compact && styles.compact, corners, look, { opacity: disabled ? 0.4 : 1 }, style]}
     >
       <View style={styles.row}>
-        <Text style={{ color: fg, fontFamily: variant === "soft" ? fonts.sansSemi : fonts.sansMedium, fontSize: 15 }}>{label}</Text>
+        <Text style={{ color: fg, fontFamily: variant === "soft" ? fonts.sansSemi : fonts.sansMedium, fontSize: compact ? 14 : 15 }} numberOfLines={1}>
+          {label}
+        </Text>
         {variant === "solid" && (
           <Text accessibilityElementsHidden importantForAccessibility="no" style={{ color: fg, fontSize: 15 }}>
             {" ↗"}
           </Text>
         )}
       </View>
-    </Pressable>
+    </PressableScale>
   );
 }
 
 const styles = StyleSheet.create({
   base: { minHeight: 48, paddingHorizontal: 20, justifyContent: "center", alignItems: "center" },
+  compact: { minHeight: 44, paddingHorizontal: 10 },
   row: { flexDirection: "row", alignItems: "center" },
 });
