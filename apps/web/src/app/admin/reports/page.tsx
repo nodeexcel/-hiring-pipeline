@@ -19,7 +19,7 @@ export default async function ReportsPage() {
           </>
         }
       />
-      <div className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <div className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-3 stagger">
         <StatTile label="Average, round 1" value={fmt(averages.r1)} hint={`${counts.r1} submitted`} />
         <StatTile label="Average, round 2" value={fmt(averages.r2)} hint={`${counts.r2} submitted`} />
         <StatTile label="Average, round 3" value={fmt(averages.r3)} hint={`${counts.r3} reviewed`} />

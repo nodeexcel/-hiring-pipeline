@@ -32,13 +32,13 @@ export default async function CandidatesPage({ searchParams }: PageProps<"/admin
         }
       />
 
-      <div className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
+      <div className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7 stagger">
         {CANDIDATE_STATUSES.map((s) => (
           <StatTile key={s} label={s} value={counts[s]} />
         ))}
       </div>
 
-      <div className="mb-8 grid gap-4 md:grid-cols-2">
+      <div className="mb-8 grid gap-4 md:grid-cols-2 stagger">
         <Card className="sm:opacity-100">
           <CardBody className="p-5">
             <ActionForm action={addCandidate} className="flex flex-col gap-4">

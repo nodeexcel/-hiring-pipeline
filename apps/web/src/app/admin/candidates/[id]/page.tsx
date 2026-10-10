@@ -65,7 +65,7 @@ export default async function CandidateDetail({ params }: PageProps<"/admin/cand
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 stagger">
         <StatTile label="Aptitude" value={r1Score ?? dash} hint={r1?.submitted_at ? `${Math.round((r1.elapsed_ms ?? 0) / 60000)} min taken` : "Round 1"} />
         <StatTile label="Coding" value={r2Score ?? dash} hint="Round 2, blended" />
         <StatTile label="Machine test" value={r3Avg ?? dash} hint={`Round 3, ${r3Reviews.length} review${r3Reviews.length === 1 ? "" : "s"}`} />

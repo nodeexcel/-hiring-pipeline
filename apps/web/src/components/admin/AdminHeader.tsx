@@ -24,8 +24,9 @@ function NavLinks({ path, className }: { path: string; className: string }) {
             href={href}
             aria-current={path.startsWith(href) ? "page" : undefined}
             className={cn(
-              "text-sm transition-colors duration-200 hover:text-brand",
-              path.startsWith(href) ? "font-medium text-foreground" : "text-muted-foreground",
+              "relative block py-1 text-sm transition-colors duration-200 hover:text-brand",
+              "after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:bg-foreground after:transition-transform after:duration-300",
+              path.startsWith(href) ? "font-medium text-foreground after:scale-x-100" : "text-muted-foreground after:scale-x-0",
             )}
           >
             {label}

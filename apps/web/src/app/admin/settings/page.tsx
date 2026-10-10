@@ -38,7 +38,7 @@ export default async function SettingsPage() {
       <div className="max-w-3xl space-y-6">
         {rounds.map((r) => (
           <Section key={r.n} title={`Round ${r.n}: ${NAMES[r.n]}`}>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 stagger">
               <FormField label="Pass mark (0 to 100)">
                 <Input name={`cutoff_${r.n}`} type="number" step="any" min={0} max={100} defaultValue={r.cutoff} />
               </FormField>

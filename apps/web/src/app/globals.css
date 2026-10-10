@@ -52,6 +52,7 @@
   --animate-chai-bounce: chai-bounce 1.75s linear infinite;
   --animate-chai-accordion-down: chai-accordion-down 0.25s ease-out;
   --animate-chai-accordion-up: chai-accordion-up 0.2s ease-out;
+  --animate-chai-page: chai-page 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both;
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -88,6 +89,16 @@
   from {
     opacity: 0;
     transform: translateY(8px) scale(0.98);
+    }
+  to {
+    opacity: 1;
+    transform: none;
+    }
+  }
+  @keyframes chai-page {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
     }
   to {
     opacity: 1;
@@ -223,4 +234,26 @@
 
 @utility btn-asym-mirror {
     border-radius: var(--radius) 0 var(--radius) 0;
+}
+/* Children of .stagger rise in one after another (up to 8; the rest arrive with the last). */
+@utility stagger {
+  & > * {
+    animation: chai-page 0.36s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+  & > :nth-child(2) { animation-delay: 45ms; }
+  & > :nth-child(3) { animation-delay: 90ms; }
+  & > :nth-child(4) { animation-delay: 135ms; }
+  & > :nth-child(5) { animation-delay: 180ms; }
+  & > :nth-child(6) { animation-delay: 225ms; }
+  & > :nth-child(7) { animation-delay: 270ms; }
+  & > :nth-child(n + 8) { animation-delay: 315ms; }
+}
+
+/* Anyone who asked their system for less motion gets none, everywhere. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }
