@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Hiring pipeline",
+    "slug": "hiring-aptitude",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "co.example.interview"
+    },
+    "android": {
+      "package": "co.example.interview",
+      "allowBackup": false
+    },
+    "plugins": [
+      "expo-font",
+      "expo-secure-store"
+    ]
+  }
+}
