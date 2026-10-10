@@ -5,6 +5,79 @@ Three-round hiring pipeline from `Interview_Process_Flow.docx`: admin invites a 
 tests + reviewer rubric) → **R3 machine test** (emailed take-home, rubric review) → weighted
 final decision. Failing a cutoff at R1/R2 auto-rejects with a logged email.
 
+## Status: what is built
+
+Legend: **done** = built and exercised by automated tests or a live run; **not verified** = code
+exists but has not been run against the real thing (device, SEB install, production host).
+
+### Admin panel (`apps/web`, dark-first, ChaiUI design system, skeleton loaders on every route)
+
+| Area | What it does | Status |
+|---|---|---|
+| Candidates | List with status counts and paging, add one, CSV bulk upload, resend invite | done |
+| Candidate detail | Scores per round, time taken, proctoring flag timeline, R2 code replay, per-problem test results, similarity matches, R3 submission, reviewer rubrics, email log, audit trail | done |
+| Question banks | Aptitude, coding (with hidden tests) and machine-test banks, organised by **topic** with per-topic counts; drafts are reviewed and enabled before they are ever served | done |
+| Cutoffs and settings | Per-round pass marks, auto-advance or manual approval, final weights (20/40/40), questions per paper, problems per candidate (3), per-topic cap | done |
+| Reports | Pass rate per round and score distributions | done |
+| Users | Approve staff (admin or reviewer), activate or deactivate | done |
+| Auth | Supabase Auth, role-guarded layout, inactive-by-default signups | done |
+
+### Candidate-facing
+
+| Piece | What it does | Status |
+|---|---|---|
+| Round 1 mobile app (`apps/mobile`) | Invite code, rules and regulations, encrypted paper download, offline gate, monotonic timer that also counts time the app was closed, flags (internet on, background, screenshot), review screen, signed upload, animated and accessible UI | done (ran on a physical phone through Expo Go) |
+| Round 1 web fallback | `/test/r1` on the same API | done |
+| Round 2 web IDE | `/test/r2`: Monaco editor, **3 problems per candidate**, JS / Python / Java / C++, run samples, hidden tests on submit, snapshots every 15 s, tab and paste flags | done |
+| Safe Exam Browser | Config generator and header check (`/api/seb-config`) | not verified against a real SEB install |
+| Round 3 | Emailed take-home link, `/submit/[token]` (GitHub link or zip), deadline and late flag, reviewer rubric, walkthrough date | done |
+| Android screen pinning | `modules/kiosk-pin` (Kotlin) | not verified on a device; needs a dev build, not Expo Go |
+
+### Pipeline, data and infrastructure
+
+- **Pipeline engine**: cutoffs, auto-reject with logged email, next-round email, weighted final score,
+  audit log on every transition (`packages/shared`, covered by unit tests).
+- **Question rotation**: papers favour the least-served questions and cap each topic, so candidates
+  do not keep seeing the same items.
+- **Database**: 6 migrations (`supabase/migrations`), 16 tables, RLS, explicit grants, topic count
+  views. Applied to the local stack and to the hosted project.
+- **Code runner**: Piston (default) or Judge0 behind one `CodeRunner` interface.
+- **Email**: Resend with logging to `email_log`; falls back to console when no key is set.
+
+### Question bank content
+
+| Content | Count | Source |
+|---|---|---|
+| Aptitude questions | 127 | generated and self-verified in `question-bank/aptitude.json` |
+| Coding problems | 24 | 6 original + 18 medium problems from the open CodeContests dataset, each with the reference solution re-run through the sandbox |
+| Take-home tasks | 4 | original |
+
+All of it loads as an **inactive draft**. A person must review and enable it in Admin > Question banks.
+
+### Tests
+
+| Suite | Count | Run with |
+|---|---|---|
+| Shared logic (unit) | 44 | `pnpm --filter @app/shared test` |
+| Mobile (unit + protocol integration against the local server) | 21 | `pnpm --filter mobile test` |
+| API end to end (full pipeline incl. hidden tests, reviewers, rotation) | 14 | `pnpm --filter web test:api` |
+| Browser (functional, axe accessibility in dark and light, 375 px overflow, titles, focus, 404) | 13 | `pnpm --filter web test:ui` |
+
+All of these run only against the local Supabase stack, never the hosted one.
+
+### Not done yet
+
+- **Deploy**: the candidate APIs are Next.js route handlers, not Supabase Edge Functions. Supabase is the
+  database, auth and storage. The app has not been deployed (Vercel is the recommended target).
+- **Android emulator or dev-build install**: blocked by a JDK 25 CMake warning; use JDK 17. iOS not tried.
+- **Parked admin work** (in a git stash): per-test result storage, audit view of profile changes,
+  change-password page, manual "send machine test" button.
+- **Hosted data**: every question, problem and task there is still a draft; the question bank needs review.
+- **Before real use**: rotate the keys and passwords that were shared during development, and turn
+  off "Allow new users to sign up" in Supabase.
+
+## Layout
+
 ```
 apps/web          Next.js 16 (App Router)
   src/app           routing only: thin pages, layouts, route handlers, loading/error files
@@ -46,8 +119,9 @@ update public.profiles set role = 'admin', active = true where email = 'you@comp
 For a hosted project also turn **off** "Allow new users to sign up" (Authentication settings)
 and add people from Admin > Users instead.
 
-Mobile: `cd apps/mobile && EXPO_PUBLIC_API_URL=http://<host-ip>:3000 npx expo run:android`
-(dev build required; Expo Go cannot load the screen-pinning native module).
+Mobile, quickest path (Expo Go on a phone on the same Wi-Fi; screen pinning is skipped there):
+`cd apps/mobile && EXPO_PUBLIC_API_URL=http://<mac-lan-ip>:3000 npx expo start`, then scan the QR code.
+A dev build (`npx expo run:android`) is only needed for the screen-pinning module.
 
 ## Question bank
 
@@ -99,4 +173,5 @@ cheating **harder and detectable**, and records flags for a human to judge.
   in production, never alongside secrets.
 - SEB config (`/api/seb-config`) and the Kotlin screen-pin module were not exercised against
   a real SEB install / Android device in this repo.
-- No rate limiting on candidate endpoints yet (invite codes are 40-bit random).
+- Candidate endpoints are rate limited in memory per instance; use a shared store (for example Redis)
+  once the app runs on more than one server.

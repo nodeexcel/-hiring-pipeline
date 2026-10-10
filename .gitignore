@@ -2,9 +2,6 @@ node_modules
 .next
 .next-local
 .next-build
-.env
-.env.local
-.env.*
 !.env.example
 .expo
 dist
@@ -22,3 +19,7 @@ apps/web/.next-local
 
 # third-party problem statements: regenerate with scripts/question-bank/import_codecontests.py
 question-bank/codecontests.json
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
