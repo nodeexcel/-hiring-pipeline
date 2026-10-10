@@ -207,8 +207,16 @@ I cannot run the app on a device from here. Everything above except the device c
 - The app's real API client, decryption, signing and state machine against the real server: rules, then accept, then encrypted paper, then answer, then signed submit, ending with a score of 100, no `bad_signature` flag and the candidate advanced to "R1 done". A second submit is refused and mapped to a friendly outcome.
 - Types are clean and the app bundles for Android with Metro (681 modules, 6 font files).
 
+### Hardening added after the first build
+- **Timer:** elapsed time is the larger of the monotonic and wall-clock deltas, so phone sleep cannot pause it and moving the date back cannot buy time (moving it forward only costs the candidate). Time the app spends closed now counts, which is what rule 2 promises. Both are unit tested.
+- **Screen stays on** during the test, so the display sleeping does not background the app and raise a flag.
+- **Upload retries by itself** when the internet comes back, as well as on a tap.
+- **Crash screen** that reloads the saved session instead of dropping the candidate.
+- **App icon and splash** (a hexagon mark, not the ChaiCode logo).
+
 ### Not verified (needs your phone)
 - Running on a device or emulator: layout, touch targets, fonts rendering, keyboard behaviour.
+- An Android build. Two attempts failed for understood reasons: a missing `versionName` in my native module (fixed), then Android Studio's bundled **JDK 25**, whose "restricted method" warning the CMake step treats as an error. The expected fix is JDK 17 (or passing `--enable-native-access=ALL-UNNAMED`); neither has been completed yet.
 - The Kotlin screen-pinning module compiling and pinning (it needs a development build, not Expo Go).
 - Screenshot blocking on Android, airplane-mode behaviour, and resume after the OS kills the app.
 
